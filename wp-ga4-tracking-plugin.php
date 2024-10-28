@@ -20,10 +20,8 @@ add_action('wp_head', function() {
 		$category_name = $category[0]->name ?? 'Uncategorized';
 		$author_name = get_the_author_meta('display_name', $post->post_author);
 ?>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			window.dataLayer.push({
-				'event': 'post_view',
+		<script>			
+			gtag('event', 'post_view', {
 				'post_category': '<?php echo esc_js($category_name); ?>',
 				'post_author': '<?php echo esc_js($author_name); ?>'
 			});
