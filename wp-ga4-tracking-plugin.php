@@ -3,7 +3,7 @@
 /*
 Plugin Name: HPS - GA4 Author/Category Tracking
 Description: Adds post authors and categories to the GA4 tracking.
-Version: 0.2
+Version: 0.3
 Author: Hanscom Park Studio
 */
 
