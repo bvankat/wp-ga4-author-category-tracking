@@ -27,6 +27,7 @@ add_action('wp_head', function() {
 				'post_author': '<?php echo esc_js($author_name); ?>'
 			});
 					
+			gtag('event', 'post_view');
 		</script>
 <?php
 	}
